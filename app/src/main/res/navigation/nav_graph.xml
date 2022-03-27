@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.clashofstatsapp.HomeFragment"
-        android:label="HomeFragment" />
+        android:name="com.example.clashofstatsapp.home.ui.HomeInfoFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_info_home">
+        <action
+            android:id="@+id/navigateToHomeVillage"
+            app:destination="@id/homeVillageLevelFragment" />
+        <action
+            android:id="@+id/navigateToBuilderBase"
+            app:destination="@id/builderBaseLevelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeVillageLevelFragment"
+        android:name="com.example.clashofstatsapp.homevillage.HomeVillageLevelFragment"
+        android:label="HomeVillageLevelFragment"
+        tools:layout="@layout/fragment_home_village_level"/>
+
+    <fragment
+        android:id="@+id/builderBaseLevelFragment"
+        android:name="com.example.clashofstatsapp.builderbase.BuilderBaseLevelFragment"
+        android:label="BuilderBaseLevelFragment"
+        tools:layout="@layout/fragment_builder_base_level"/>
 </navigation>

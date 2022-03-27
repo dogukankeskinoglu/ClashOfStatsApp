@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "text": "Home Village Information"
+        },
+        {
+            "id": 2,
+            "text": "Builder Base Information"
+        },
+        {
+            "id": 3,
+            "text": "Clans League Information"
+        }
+    ]
+}
