@@ -14,21 +14,18 @@ class HomeInfoViewModel : ViewModel() {
     private val eventChannel = Channel<HomeInfoEvent>(Channel.BUFFERED)
     val eventsFlow = eventChannel.receiveAsFlow()
 
-    private val usecase: HomeInfoUseCase = HomeInfoUseCase()
-
+    private val useCase: HomeInfoUseCase = HomeInfoUseCase()
 
     fun getHomeInfoItems(): List<HomeInfoItem> {
-        return usecase.getHomeInfoItems()
+        return useCase.getHomeInfoItems()
     }
 
-
-
-    fun onItemClickListener(id: Int) {
+    fun onItemClickListener(item: HomeInfoItem) {
         viewModelScope.launch {
-            when(id) {
-                0 -> eventChannel.send(HomeInfoEvent.NavigateHomeVillage)
-                1 -> eventChannel.send(HomeInfoEvent.NavigateBuilderBaseVillage)
-                2 -> eventChannel.send(HomeInfoEvent.ShowSnackBar(R.string.in_progress))
+            when (item.id) {
+                1 -> eventChannel.send(HomeInfoEvent.NavigateHomeVillage)
+                2 -> eventChannel.send(HomeInfoEvent.NavigateBuilderBaseVillage)
+                3 -> eventChannel.send(HomeInfoEvent.NavigateClansLeague(item.text))
             }
         }
     }

@@ -1,0 +1,688 @@
+{
+    "leagues": [
+        {
+            "id": 1,
+            "text": "Bronze III",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 34
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 32
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 30
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 28
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 26
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 24
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 22
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 20
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Bronze II",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 46
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 44
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 42
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 40
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 38
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 36
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 34
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 32
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "Bronze I",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 58
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 56
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 54
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 52
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 50
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 48
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 46
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 44
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Silver III",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 76
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 73
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 70
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 67
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 64
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 61
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 58
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 55
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Silver II",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 94
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 91
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 88
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 85
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 82
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 79
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 76
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 73
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "Silver I",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 112
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 109
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 106
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 103
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 100
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 97
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 94
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 91
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "text": "Gold III",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 136
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 132
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 128
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 124
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 120
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 116
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 112
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 108
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "text": "Gold II",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 160
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 156
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 152
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 148
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 144
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 140
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 136
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 132
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "text": "Gold I",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 184
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 180
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 176
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 172
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 168
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 164
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 160
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 156
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "text": "Crystal III",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 214
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 209
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 204
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 199
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 194
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 189
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 184
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 179
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "text": "Crystal II",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 244
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 239
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 234
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 229
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 224
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 219
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 214
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 209
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "text": "Crystal I",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 274
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 269
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 264
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 259
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 254
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 249
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 244
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 239
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "text": "Master III",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 310
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 304
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 298
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 292
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 286
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 280
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 274
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 268
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "text": "Master II",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 346
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 340
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 334
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 328
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 322
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 316
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 310
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 304
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "text": "Master I",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 382
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 376
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 370
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 364
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 358
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 352
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 346
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 340
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "text": "Champion III",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 424
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 417
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 410
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 403
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 396
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 389
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 382
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 375
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "text": "Champion II",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 466
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 459
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 452
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 445
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 438
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 431
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 424
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 417
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "text": "Champion I",
+            "rewards": [
+                {
+                    "title": "1st Place",
+                    "reward": 508
+                },
+                {
+                    "title": "2nd Place",
+                    "reward": 501
+                },
+                {
+                    "title": "3rd Place",
+                    "reward": 494
+                },
+                {
+                    "title": "4th Place",
+                    "reward": 487
+                },
+                {
+                    "title": "5th Place",
+                    "reward": 480
+                },
+                {
+                    "title": "6th Place",
+                    "reward": 473
+                },
+                {
+                    "title": "7th Place",
+                    "reward": 466
+                },
+                {
+                    "title": "8th Place",
+                    "reward": 459
+                }
+            ]
+        }
+    ]
+}

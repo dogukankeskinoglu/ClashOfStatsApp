@@ -16,17 +16,50 @@
         <action
             android:id="@+id/navigateToBuilderBase"
             app:destination="@id/builderBaseLevelFragment" />
+        <action
+            android:id="@+id/navigateToClansLeague"
+            app:destination="@id/clansLeagueFragment">
+            <argument
+                android:name="titleArg"
+                app:argType="string" />
+        </action>
     </fragment>
 
     <fragment
         android:id="@+id/homeVillageLevelFragment"
         android:name="com.example.clashofstatsapp.homevillage.HomeVillageLevelFragment"
         android:label="HomeVillageLevelFragment"
-        tools:layout="@layout/fragment_home_village_level"/>
+        tools:layout="@layout/fragment_home_village_level" />
 
     <fragment
         android:id="@+id/builderBaseLevelFragment"
         android:name="com.example.clashofstatsapp.builderbase.BuilderBaseLevelFragment"
         android:label="BuilderBaseLevelFragment"
-        tools:layout="@layout/fragment_builder_base_level"/>
+        tools:layout="@layout/fragment_builder_base_level" />
+    <fragment
+        android:id="@+id/clansLeagueFragment"
+        android:name="com.example.clashofstatsapp.clanwarsleague.ui.leagues.ClanWarLeaguesFragment"
+        android:label="ClansLeagueFragment"
+        tools:layout="@layout/fragment_clan_war_leagues">
+        <argument
+            android:name="titleArg"
+            app:argType="string" />
+        <action
+            android:id="@+id/navigateToLeagueReward"
+            app:destination="@id/clanLeagueRewardFragment">
+            <argument
+                android:name="rewardArg"
+                app:argType="com.example.clashofstatsapp.clanwarsleague.ui.leaguereward.ClanWarLeagueRewardArguments" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/clanLeagueRewardFragment"
+        android:name="com.example.clashofstatsapp.clanwarsleague.ui.leaguereward.ClanWarLeagueRewardFragment"
+        android:label="ClanLeagueRewardFragment"
+        tools:layout="@layout/fragment_clan_war_league_reward">
+        <argument
+            android:name="rewardArg"
+            app:argType="com.example.clashofstatsapp.clanwarsleague.ui.leaguereward.ClanWarLeagueRewardArguments" />
+    </fragment>
 </navigation>

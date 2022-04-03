@@ -5,17 +5,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.clashofstatsapp.core.adapter.DataClassDiffCallback
-import com.example.clashofstatsapp.databinding.HomeInfoItemBinding
+import com.example.clashofstatsapp.databinding.ItemHomeInfoBinding
 import com.example.clashofstatsapp.home.domain.HomeInfoItem
 
-class HomeItemAdapter (
-    private val onItemClickListener: (Int) -> Unit = {}
-    ): ListAdapter<HomeInfoItem, HomeItemAdapter.HomeItemViewHolder>(DataClassDiffCallback {
+class HomeItemAdapter(
+    private val onItemClickListener: (HomeInfoItem) -> Unit = {}
+) : ListAdapter<HomeInfoItem, HomeItemAdapter.HomeItemViewHolder>(DataClassDiffCallback {
     it.id
 }) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeItemViewHolder {
-        val binding = HomeInfoItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemHomeInfoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return HomeItemViewHolder(binding, onItemClickListener)
     }
 
@@ -23,15 +23,14 @@ class HomeItemAdapter (
         holder.bind(getItem(position))
     }
 
-    class HomeItemViewHolder(
-        private val binding: HomeInfoItemBinding,
-        private val onItemClickListener: (Int) -> Unit = {}
+    inner class HomeItemViewHolder(
+        private val binding: ItemHomeInfoBinding,
+        private val onItemClickListener: (HomeInfoItem) -> Unit = {}
     ) : RecyclerView.ViewHolder(binding.root) {
 
         init {
             binding.textViewTitle.setOnClickListener {
-                val item = this.adapterPosition
-                onItemClickListener.invoke(item)
+                onItemClickListener.invoke(getItem(adapterPosition))
             }
         }
 

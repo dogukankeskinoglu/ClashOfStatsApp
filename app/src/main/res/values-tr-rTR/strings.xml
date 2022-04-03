@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clash Of Stats</string>
+    <string name="in_progress">Bu sayfa yapım aşamasında</string>
+
+
+    <!-- Home Village. -->
+    <string name="home_village_level_title">Köy levelini seçiniz</string>
+</resources>

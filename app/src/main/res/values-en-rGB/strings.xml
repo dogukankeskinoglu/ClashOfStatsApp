@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clash Of Stats</string>
+    <string name="in_progress">This page status in progress</string>
+
+
+    <!-- Home Village. -->
+    <string name="home_village_level_title">Choose Town Hall Level</string>
+</resources>

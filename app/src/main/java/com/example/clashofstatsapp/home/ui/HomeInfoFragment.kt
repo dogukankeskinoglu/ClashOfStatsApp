@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import com.example.clashofstatsapp.R
 import com.example.clashofstatsapp.core.adapter.VerticalSpacingItemDecoration
 import com.example.clashofstatsapp.databinding.FragmentInfoHomeBinding
+import com.example.clashofstatsapp.home.domain.HomeInfoItem
 import com.example.clashofstatsapp.infra.BaseFragment
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -43,8 +44,9 @@ class HomeInfoFragment : BaseFragment() {
                         val navDirections = HomeInfoFragmentDirections.navigateToBuilderBase()
                         navigatePage(navDirections)
                     }
-                    is HomeInfoEvent.ShowSnackBar -> {
-                        showSnackBar(event.resource)
+                    is HomeInfoEvent.NavigateClansLeague -> {
+                        val navDirections = HomeInfoFragmentDirections.navigateToClansLeague(titleArg = event.title)
+                        navigatePage(navDirections)
                     }
                 }
             }
@@ -71,7 +73,7 @@ class HomeInfoFragment : BaseFragment() {
         }
     }
 
-    private fun setHomeInfoItemClickListener(id: Int) {
-        viewModel.onItemClickListener(id)
+    private fun setHomeInfoItemClickListener(item: HomeInfoItem) {
+        viewModel.onItemClickListener(item)
     }
 }
