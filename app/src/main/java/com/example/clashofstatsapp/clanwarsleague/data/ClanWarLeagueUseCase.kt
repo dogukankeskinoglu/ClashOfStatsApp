@@ -4,18 +4,19 @@ import com.example.clashofstatsapp.clanwarsleague.domain.ClanWarLeagueItem
 import com.example.clashofstatsapp.clanwarsleague.domain.ClanWarLeaguesMapper
 import com.example.clashofstatsapp.clanwarsleague.domain.ClanWarLeagueRewardItem
 import com.example.clashofstatsapp.core.parseFile
+import javax.inject.Inject
 
-class ClanWarLeagueUseCase {
+class ClanWarLeagueUseCase @Inject constructor(
+    private val mapper: ClanWarLeaguesMapper
+) {
 
     fun fetchClanWarLeagues(): List<ClanWarLeagueItem> {
         val clansLeagueResponse = parseFile<ClanWarLeaguesResponse>(fileName = CLANS_LEAGUE_PATH)
-        val mapper = ClanWarLeaguesMapper()
         return mapper.mapFromResponse(clansLeagueResponse)
     }
 
     fun fetchClanWarLeagueWards(id: Int): List<ClanWarLeagueRewardItem> {
         val clansLeagueResponse = parseFile<ClanWarLeaguesResponse>(fileName = CLANS_LEAGUE_PATH)
-        val mapper = ClanWarLeaguesMapper()
         val leagues = mapper.mapFromResponse(clansLeagueResponse)
         return leagues.first { it.id == id }.rewards
     }

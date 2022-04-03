@@ -3,15 +3,16 @@ package com.example.clashofstatsapp.home.data
 import com.example.clashofstatsapp.core.parseFile
 import com.example.clashofstatsapp.home.domain.HomeInfoItem
 import com.example.clashofstatsapp.home.domain.HomeInfoResponseMapper
+import javax.inject.Inject
 
-class HomeInfoUseCase {
+class HomeInfoUseCase @Inject constructor(
+    private val mapper: HomeInfoResponseMapper
+) {
 
     fun getHomeInfoItems(): List<HomeInfoItem> {
         val homeInfoResponse = parseFile<HomeInfoResponse>(fileName = HOME_INFO_PATH)
-        val mapper = HomeInfoResponseMapper()
         return mapper.mapFromResponse(homeInfoResponse)
     }
-
 
     companion object {
 

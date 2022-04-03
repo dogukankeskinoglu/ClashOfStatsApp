@@ -4,8 +4,9 @@ import com.example.clashofstatsapp.clanwarsleague.data.ClanWarLeagueResponse
 import com.example.clashofstatsapp.clanwarsleague.data.ClanWarLeagueRewardResponse
 import com.example.clashofstatsapp.clanwarsleague.data.ClanWarLeaguesResponse
 import com.example.clashofstatsapp.core.extension.orZero
+import javax.inject.Inject
 
-class ClanWarLeaguesMapper {
+class ClanWarLeaguesMapper @Inject constructor() {
 
     fun mapFromResponse(response: ClanWarLeaguesResponse): List<ClanWarLeagueItem> {
         val items = response.warLeagues?.mapNotNull {

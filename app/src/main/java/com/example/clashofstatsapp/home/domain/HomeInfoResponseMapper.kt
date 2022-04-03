@@ -3,8 +3,9 @@ package com.example.clashofstatsapp.home.domain
 import com.example.clashofstatsapp.core.extension.orZero
 import com.example.clashofstatsapp.home.data.HomeInfoItemResponse
 import com.example.clashofstatsapp.home.data.HomeInfoResponse
+import javax.inject.Inject
 
-class HomeInfoResponseMapper {
+class HomeInfoResponseMapper @Inject constructor() {
 
     fun mapFromResponse(response: HomeInfoResponse): List<HomeInfoItem> {
         val items = response.levels?.mapNotNull {

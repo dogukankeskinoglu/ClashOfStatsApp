@@ -5,16 +5,19 @@ import androidx.lifecycle.viewModelScope
 import com.example.clashofstatsapp.clanwarsleague.data.ClanWarLeagueUseCase
 import com.example.clashofstatsapp.clanwarsleague.domain.ClanWarLeagueItem
 import com.example.clashofstatsapp.clanwarsleague.domain.ClanWarLeagueRewardItem
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ClanWarLeaguesViewModel : ViewModel() {
+@HiltViewModel
+class ClanWarLeaguesViewModel @Inject constructor(
+    private val useCase: ClanWarLeagueUseCase
+) : ViewModel() {
 
     private val eventChannel = Channel<ClansLeagueEvent>(Channel.BUFFERED)
     val eventsFlow = eventChannel.receiveAsFlow()
-
-    private val useCase: ClanWarLeagueUseCase = ClanWarLeagueUseCase()
 
     fun fetchClanWarLeagues(): List<ClanWarLeagueItem> {
         return useCase.fetchClanWarLeagues()

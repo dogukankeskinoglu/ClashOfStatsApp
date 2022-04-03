@@ -2,19 +2,21 @@ package com.example.clashofstatsapp.home.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.clashofstatsapp.R
 import com.example.clashofstatsapp.home.data.HomeInfoUseCase
 import com.example.clashofstatsapp.home.domain.HomeInfoItem
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class HomeInfoViewModel : ViewModel() {
+@HiltViewModel
+class HomeInfoViewModel @Inject constructor(
+    private val useCase: HomeInfoUseCase
+) : ViewModel() {
 
     private val eventChannel = Channel<HomeInfoEvent>(Channel.BUFFERED)
     val eventsFlow = eventChannel.receiveAsFlow()
-
-    private val useCase: HomeInfoUseCase = HomeInfoUseCase()
 
     fun getHomeInfoItems(): List<HomeInfoItem> {
         return useCase.getHomeInfoItems()
